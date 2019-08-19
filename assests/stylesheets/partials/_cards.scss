@@ -1,0 +1,124 @@
+.card{
+      margin-bottom: 1.5rem;
+      border-radius: 9px !important;
+      .card-img-top{
+            border-radius: 5px 5px 0 0;
+      }
+      .notify{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            position: absolute;
+            width: 100%;
+            .state{
+                  color: #0081B5;
+                  font-weight: 600;
+                  letter-spacing: 1.2px;
+                  line-height: 16px;
+                  text-align: center;
+                  padding: 0.2rem 0.8rem;
+                  background-color: #e8f9fe;
+                  border-radius: 2rem;
+            }
+            .num{
+                  color: #fff;
+                  font-weight: 600;
+                  letter-spacing: 1.2px;
+                  line-height: 16px;
+                  text-align: center;
+                  padding: 0.3rem 0.8rem 0.2rem;
+                  background-color: #293a5b;
+                  border-radius: 4px;
+            }
+      }
+      .card-body-btn{
+            display: flex;
+            justify-content: space-between;
+            .cta{
+                  width: 46%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+            }
+            .watch{
+                  color: #0b2145;
+                  border: 2px solid #e8e9ee;
+                  .far{
+                        color: #f5af33;
+                        font-weight: 400;
+                        margin-left: 0.5rem;
+                  }
+            }
+      }
+     
+      .card-title{
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            line-height: 16px;
+            height: 1.5rem;
+            display: inline-block;
+            padding: 0.2rem 1.2rem;
+            text-align: center;
+           
+      }
+      .card-body{
+            position: relative;
+            .card-text{
+                  color: #0A1F44;
+                  font-size: 0.875rem;
+                  border-bottom: 2px solid #e8e9ee;
+                  padding-bottom: 1rem;
+            }
+      }
+      .days{
+            color: #0081B5;
+            position: absolute;
+            top: 16%;
+            right: 7%;
+      }
+      .auction-title{
+            color: #41875a;
+            background-color: #eaeef0;
+            position: relative;
+            &::after{
+                  content: '';
+                  width: 6px;
+                  height: 6px;
+                  position: absolute;
+                  background: red;
+                  top: 50%;
+                  left: 7%;
+                  transform: translate(0%, -50%);
+                  border-radius: 2rem;
+            }
+      }
+      .eligible{
+            color: #0b2044;
+            background-color: #fdeecb;
+      }
+      .new{
+            color: #1e3255;
+            background-color: #e8f9fe;
+      }
+      .list-group{
+            @include mobile{
+                  justify-content: space-around;
+            }
+      }
+      .list-group-item{ 
+            color: #0A1F44;
+            border: none;
+            p{
+                  color: #8A94A6;
+                  margin-bottom: 0;
+                  font-weight: 500;
+                  line-height: 20px;
+            }
+      }
+      .blue{
+            background-color: #0081B5;
+            width: 100% !important;
+      }
+}

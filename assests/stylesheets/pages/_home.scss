@@ -1,0 +1,164 @@
+.home{
+      .banner{
+            height: 85vh;
+            box-shadow: 0px 0px 3px rgba($color: #000000, $alpha: 0.1);
+            @include mobile{
+                  height: auto;
+            }
+            @include tablet{
+                  height: auto;
+            }
+      .form-control{
+            border-radius: 4px;
+            width: 272px;
+            height: 48px;
+      }
+      .btn{
+            width: 8rem;
+      }
+      }
+      .filter{
+            @include mobile{
+                  position: fixed;
+                  z-index: 9999;
+                  top: 0;
+                  max-height: 100vh;
+                  padding: 1rem;
+                  overflow: scroll;
+                  transition: all 0.3s ease;
+            }
+            @include tabelt{
+                  position: fixed;
+                  z-index: 9999;
+                  top: 0;
+                  max-height: 100vh;
+                  padding: 1rem;
+                  overflow: scroll;
+                  transition: all 0.3s ease;
+            }
+            .filter-top{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding-bottom: 1rem;
+                  margin-bottom: 2rem;
+                  border-bottom: 1px solid #f1f2f4;
+                  p, h5{
+                        margin-bottom: 0;
+                  }
+            }
+            .price{
+                  margin-bottom: 1.5rem;
+                  .form-group{
+                        flex-wrap: nowrap;
+                        .input-group-text{
+                              padding: 0;
+                              position: absolute;
+                              left: 5px;
+                              background: transparent;
+                              top: 50%;
+                              transform: translate(10%, -50%);
+                              border: none;
+                        }
+                        select{
+                              box-shadow: none;
+                              border: 1px solid #e7e9ec;
+                              background: white url('../../../img/down.svg') no-repeat right;
+                              padding-left: 1.3rem;
+                              background-size: 13px;
+                              background-position: 110px 7px;
+                        }
+                  }
+                  .form-inline{
+                        @include mobile{
+                              flex-wrap: nowrap;
+                              justify-content: space-between;
+                              .form-group{
+                                    width: 45%;
+                              }
+                        }
+
+                  }
+
+            }
+            .filter-checkbox{
+                  h6{
+                        border-bottom: 1px solid #e7e9ec;
+                        padding-bottom: 0.4rem;
+                  }
+            }
+      }
+      .main-section{
+            .collapse{
+                  transform: translate(0%);
+                  background: white;
+            }
+            .custom-select-drop{
+                  width: 40%;
+                  margin-bottom: 2rem !important;
+            }
+      }
+     
+      .nav-tabs{
+            border-bottom: 0;
+            li{
+                  a{
+                        color: $dark-grey;
+                        border: none;
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                        &.active{
+                              border-radius: 2rem;
+                              padding: 0.5rem 2rem;
+                              border: none;
+                              color: #0f2448;
+                              background: #f1f2f4;
+                        }
+                        &:hover{
+                              border: none;
+                        }
+                  }
+                  
+            }
+            
+      }
+      .sort{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include mobile{
+                  justify-content: flex-end;
+                  flex-wrap: wrap;
+                  right: 1.24rem;
+                  top: -10px;
+            }
+            h6{
+                  margin-bottom: 0;
+                  white-space: nowrap;
+            }
+            select{
+                  border: none;
+                  background: white url('../../../img/down.svg') no-repeat right;
+                  padding-left: 1.3rem;
+                  background-size: 13px;
+                  background-position: 110px 7px;
+                  box-shadow: none;
+                  @include mobile{
+                        width: 70%;
+                  }
+            }
+      }
+     
+     
+}
+.clear-button{
+      @include mobile{
+            position: absolute;
+            top: -5rem;
+            right: 0;
+      }
+      
+}

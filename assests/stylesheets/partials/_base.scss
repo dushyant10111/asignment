@@ -1,0 +1,249 @@
+body{
+      font-family: gili-m !important;
+
+      a{
+            &:hover{
+                  color: initial;
+                  text-decoration: none;
+            }
+      }
+
+      a, input {
+            &:focus{
+                  outline: none !important;
+                  box-shadow: none !important;
+                  background-color: #f7f8f9 !important;
+            }
+      }
+      button{
+            &:focus{
+                  outline: none;
+            }
+      }
+      .green-text{
+            color: $green;
+      }
+      .white-text{
+            color: #fff;
+      }
+      .font-14{
+            font-size: 0.875rem;
+      }
+      .font-12{
+            font-size: 0.75rem;
+      }
+      .font-10{
+            font-size: 0.65rem;
+      }
+      .bg-green{
+            background: $green;
+      }
+      h1{
+            font-family: gili !important;
+            color: #0A1F44;
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 80px;
+            text-align: left;
+            @include mobile{
+                  font-size: 2rem;
+                  line-height: 2.5rem;
+            }
+      }
+      h4{
+            color: #4E5D78;
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 32px;
+            text-align: left;
+      }
+      h5{
+            color: #0A1F44;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 32px;
+            text-align: left;
+      }
+      .container{
+            padding: 5rem 0;
+            max-width: 90%;
+            margin: auto;
+            @include mobile{
+                  padding: 3rem 0;
+            }
+      }
+
+      .styled-checkbox {
+            position: absolute; // take it out of document flow
+            opacity: 0; // hide it
+          
+            & + label {
+              position: relative;
+              cursor: pointer;
+              padding: 0;
+            }
+          
+            // Box.
+            & + label:before {
+              content: '';
+              margin-right: 10px;
+              display: inline-block;
+              vertical-align: text-top;
+              width: 20px;
+              height: 20px;
+              background: white;
+              border: 1px solid $green;
+            }
+          
+            // Box hover
+            &:hover + label:before {
+              background: $green;
+            }
+            
+            // Box focus
+            &:focus + label:before {
+              box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+            }
+          
+            // Box checked
+            &:checked + label:before {
+              background: $green;
+            }
+            
+            // Disabled state label.
+            &:disabled + label {
+              color: #b8b8b8;
+              cursor: auto;
+            }
+          
+            // Disabled box.
+            &:disabled + label:before {
+              box-shadow: none;
+              background: #ddd;
+              border: 1px solid $green;
+            }
+          
+            // Checkmark. Could be replaced with an image
+            &:checked + label:after {
+              content: '';
+              position: absolute;
+              left: 5px;
+              top: 9px;
+              background: white;
+              border: 1px solid $green;
+              width: 2px;
+              height: 2px;
+              
+              
+              transform: rotate(45deg);
+            }
+          }
+          hr{
+                border-top: 1px solid #E1E4E8;
+                margin: 0;
+          }
+
+      .checkbox-label {
+            display: block;
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            @include mobile{
+                  padding-left: 20px;
+            }
+            input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                  height: 0;
+                  width: 0; 
+                  @include mobile{
+                        width: 0 !important;
+                  }
+            }
+      }
+      .checkbox-label{
+            /* The container */
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+ 
+     input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+      }
+      .checkmark {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            
+            border-radius: 2px;
+            border: 2px solid  #dddfe5;
+            @include mobile{
+                  left: 0;
+                  height: 14px;
+                  width: 14px; 
+            }
+            &::after{
+                  content: "";
+            position: absolute;
+            display: none;
+            }
+      }
+          .checkbox-label:hover input ~ .checkmark {
+            background-color: $green;
+            @include mobile{
+                  background-color: #f7f7f7; 
+            }
+            @include tablet{
+                  background-color: #f7f7f7; 
+            }
+       }
+
+          .checkbox-label input:checked ~ .checkmark {
+            background-color: $green;
+            border: 2px solid  $green; }
+
+          .checkbox-label input:checked ~ .checkmark:after {
+            display: block; }
+          .checkbox-label .checkmark:after {
+            left: 6px;
+            top: 1px;
+            width: 6px;
+            height: 11px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+            @media (max-width: 767px) {
+            .checkbox-label .checkmark:after {
+                left: 4px;
+                top: 0; } }
+
+                .custom-select{
+                  border: 1px solid #E1E4E8;
+                      &:focus{
+                            box-shadow: none;
+                            border-color: #E1E4E8;
+                      }
+                }
+}

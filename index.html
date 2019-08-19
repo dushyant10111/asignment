@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="img/mark.svg" rel="shortcut icon" type="image/x-icon" />
+  <title>Invento</title>
+  <!-- css files add here -->
+  <link href="assests/stylesheets/main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
+</head>
+  
+<body class="home">
+ <div class="wrapper">
+    <!--header start-->
+    <header class="sticky-top"  id="nav">
+      <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo image"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="form-group navbar-nav mx-auto mt-2 mt-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search something">
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="cta my-2 my-sm-0 green-text mr-4 font-14" type="submit">Sign in</button>
+            <button class="cta my-2 my-sm-0 bg-green white-text font-14" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!--header end-->
+    <!--body content start-->
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-6 bg-image order-md-2">
+                  <img src="img/banner.png" class="w-100 mb-4 mb-md-0" alt="">
+                </div>
+            <div class="col-lg-6 flex-column d-flex justify-content-center ">
+              <h1>
+                Get your inventory straight from the source.
+              </h1>
+              <h4 class="mb-3">
+                The most loved liquidation marketplace.
+              </h4>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-3 mb-3 mb-md-0" type="search" placeholder="Your email address">
+                <button class="btn cta bg-green white-text font-14 my-2 my-sm-0" type="submit">Get Notified</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="main-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <button class="navbar-toggler d-block d-md-none clear-button" type="button" data-toggle="collapse" data-target="#filter" aria-controls="filter" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-filter"></i>
+                  </button>
+            </div>
+            <aside class="col-md-3 filter collapse d-md-block" id="filter">
+                
+              <div class="filter-top">
+                <h5>Filter</h5>
+                <p class="d-none d-md-block green-text">Clear</p>
+                <button class=" green-text d-block d-md-none " type="button" data-toggle="collapse" data-target=".filter" aria-expanded="false" aria-controls="filter">clear</button>
+              </div>
+              <div class="price">
+                <h6>Price</h6>
+                <form class="form-inline">
+                    <div class="form-group col-lg-6 p-0">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">$</div>
+                          </div>
+                        <select class="custom-select my-1 mr-sm-3" id="inlineFormCustomSelectPref">
+                            <option selected>Min</option>
+                            <option value="1">10</option>
+                            <option value="2">20</option>
+                            <option value="3">30</option>
+                          </select>
+                    </div>
+                    <div class="form-group col-lg-6 p-0">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">$</div>
+                          </div>
+                        <select class="custom-select my-1 mr-sm-3" id="inlineFormCustom">
+                            <option selected>Max</option>
+                            <option value="1">200</option>
+                            <option value="2">300</option>
+                            <option value="3">400</option>
+                          </select>
+                    </div>
+                </form>
+                
+                  
+              </div>
+              <div class="filter-checkbox mb-4">
+                <h6>Location(USA)</h6>
+                <label class="checkbox-label">West
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Midwest
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Southwest
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Northeast
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Southwest
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="filter-checkbox mb-4">
+                <h6>MSRP percentage off</h6>
+                <label class="checkbox-label">0-20%
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-label">20-50%
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-label">50-80%
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+              </div>
+              <div class="filter-checkbox">
+                <h6>Condition</h6>
+                <label class="checkbox-label">New
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Like New
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Unispected Returns
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Used
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Salvage
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-label">Mixed
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+              </div>
+            </aside>
+            <div class="col-md-9">
+              <div class="d-none d-lg-block">
+              <ul class="nav nav-tabs mb-4 " id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#everyday" role="tab" aria-controls="home" aria-selected="true">Everyday</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#live" role="tab" aria-controls="profile" aria-selected="false">Live Auction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#eligible" role="tab" aria-controls="contact" aria-selected="false">Eligible for auction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="buynow" data-toggle="tab" href="#buynow" role="tab" aria-controls="contact" aria-selected="false">But now only</a>
+                </li>
+              </ul>
+            </div>
+              <select class="custom-select custom-select-drop mb-4 d-block d-lg-none" id="inline">
+                  <option selected>Everyday</option>
+                  <option value="1">Live Auction</option>
+                  <option value="2">2Eligible for auction</option>
+                  <option value="3">But now only</option>
+                </select>
+              <div class="sort">
+                <h6>Sort By :</h6>
+                <select class="custom-select my-1 mr-sm-3" id="inlineFormCustomSelect">
+                    <option selected>Lower Price</option>
+                    <option value="1">Higher Price</option>
+                  </select>
+              </div>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade  show active" id="everyday" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row">
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/card1.png" alt="Card image cap">
+                            <div class="notify">
+                              <a href="#" class="font-10 state">New</a>
+                              <a href="#" class="font-10 num"><i class="fas fa-eye font-12"></i> 547</a>
+
+                            </div>
+                            <div class="card-body pb-0">
+                              <h5 class="card-title auction-title">Live Auction</h5>
+                              <p class="days font-12">3 days left</p>
+                              <p class="card-text">Original iPhone Boxes By Apple Liquidation Lot</p>
+                            </div>
+                            <ul class="list-group list-group-flush flex-row">
+                              <li class="list-group-item">$200 <p class="font-12">Current Bid</p> </li>
+                              <li class="list-group-item"><del>$500</del>  <p class="font-12">MSRP</p> </li>
+                              <li class="list-group-item">20 <p class="font-12">Units</p> </li>
+                            </ul>
+                            <div class="card-body card-body-btn">
+                              <a href="#" class="cta btn bg-green white-text font-14">View Auction</a>
+                              <a href="#" class="cta btn watch font-14">Watch <i class="far fa-star"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" >
+                            <img class="card-img-top" src="img/card3.png" alt="Card image cap">
+                            <div class="notify">
+                                <a href="#" class="font-10 state">Used</a>
+                                <a href="#" class="font-10 num"><i class="fas fa-eye font-12"></i> 547</a>
+  
+                              </div>
+                            <div class="card-body pb-0">
+                              <h5 class="card-title eligible">Eligible for auction</h5>
+                              <p class="card-text ">Original iPhone Boxes By Apple Liquidation Lot</p>
+                            </div>
+                          
+                            <ul class="list-group list-group-flush flex-row">
+                              <li class="list-group-item">$200 <p class="font-12">Current Bid</p> </li>
+                              <li class="list-group-item"><del>$500</del>  <p class="font-12">MSRP</p> </li>
+                              <li class="list-group-item">20 <p class="font-12">Units</p> </li>
+                            </ul>
+                            
+                            <div class="card-body card-body-btn">
+                                <a href="#" class="cta btn bg-green white-text font-14">View Auction</a>
+                                <a href="#" class="cta btn watch font-14">Watch <i class="far fa-star"></i></a>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" >
+                          <img class="card-img-top" src="img/card2.png" alt="Card image cap">
+                          <div class="card-body pb-0">
+                            <h5 class="card-title new">Newly listed</h5>
+                            <p class="card-text">Speakers, LED Lights, DVD Players, Printers, and More Electronics…</p>
+                          </div>
+                          
+                          <ul class="list-group list-group-flush flex-row">
+                            <li class="list-group-item">$200 <p class="font-12">Current Bid</p> </li>
+                            <li class="list-group-item"><del>$500</del>  <p class="font-12">MSRP</p> </li>
+                            <li class="list-group-item">20 <p class="font-12">Units</p> </li>
+                          </ul>
+                        
+                          <div class="card-body card-body-btn">
+                            <a href="#" class="cta btn blue white-text font-14">Sold</a>
+                            
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                      <a href="#" class="cta d-flex w-100 load"> Load More</a>
+                    </div>
+                 </div>
+                </div>
+                <div class="tab-pane fade" id="live" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                </div>
+                <div class="tab-pane fade" id="eligible" role="tabpanel" aria-labelledby="contact-tab"> 
+                  </div>
+                <div class="tab-pane fade" id="buynow" role="tabpanel" aria-labelledby="contact-tab"> 
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--body content end-->
+    <!--footer start -->
+    <footer id="footer" class="" >
+      <div class="container">
+       <div class="row">
+         <div class="col-md-3 mb-4">
+           <img src="img/mark.svg" alt="mark image">
+         </div>
+         <div class="col-md-2">
+           <h6>Company</h6>
+           <ul class="list-unstyled">
+             <li><a href="#" class="font-14">Company</a></li>
+             <li><a href="#" class="font-14">FAQ</a></li>
+             <li><a href="#" class="font-14">Sign up</a></li>
+           </ul>
+         </div>
+         <div class="col-md-2">
+            <h6>Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="font-14">Terms to use</a></li>
+              <li><a href="#" class="font-14">Privacy Policy</a></li>
+            </ul>
+         </div>
+         <div class="col-md-3">
+            <h6>Contact</h6>
+            <ul class="list-unstyled">
+              <li>contact :<a href="mailto:contact@anteelo.com" class="font-14">contact@anteelo.com</a></li>
+              <li>Email :<a href="mailto:Support@anteelo.com" class="font-14">Support@anteelo.com</a></li>
+              <li>Join our facebook group :<a href="#" class="font-14">Anteelodesign</a></li>
+            </ul>
+         </div>
+         <div class="col-md-2">
+            <h6>Follow us</h6>
+            <ul class="list-unstyled d-flex">
+              <li><a href="#" class="font-14"><img src="img/Facebook.png" alt="facebook icon"></a></li>
+              <li><a href="#" class="font-14"><img src="img/insta.svg" alt="instagram icon"></a></li>
+              <li><a href="#" class="font-14"><img src="img/twitter.png" alt="twitter icon"></a></li>
+            </ul>
+         </div>
+       </div>
+      </div>
+    </footer>
+    <div class="copy">
+        &copy; 2018 Invento lot
+    </div>
+    <!--footer end-->
+ </div>
+  <!-- inject:js -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+  <script src="lib/main.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>

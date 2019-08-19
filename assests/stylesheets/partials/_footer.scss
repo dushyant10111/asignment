@@ -1,0 +1,31 @@
+footer{
+      background: #fafbfb;
+      h6{
+            color: #0A1F44;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: left;
+      }
+      ul{
+            li, a{
+                  color: #4E5D78;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 34px;
+                  text-align: left;
+                  
+            }
+            img{
+                  max-width: 1.125rem;
+                  margin-right: 1rem;
+            }
+      }
+}
+.copy{
+      padding: 1rem;
+      text-align: center;
+      color: #4E5D78;
+      font-size: 10px;
+      font-weight: 500;
+}

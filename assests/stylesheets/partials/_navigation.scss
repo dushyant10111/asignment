@@ -1,0 +1,69 @@
+header{
+      border-bottom: 1px solid $grey;
+      background-color: white;
+      nav{
+            width: 90%;
+            margin: auto;
+            height: 71px;
+            padding: 0 !important;
+            @include mobile{
+                  width: 100%;
+                  padding: 17px 15px !important;
+            }
+           
+            #navbartogglerdemo2{
+                  @include mobile{
+                        width: 100%;
+                        margin: 1rem -15px;
+                        padding: 1rem;
+                  }
+            }
+      }
+      .navbar-collapse{
+            @include mobile{
+                  margin-top: 0.8rem;
+                  background: white;
+            }
+            @include tablet{
+                  margin-top: 0.8rem;
+                  background: white;
+            }
+      }
+      .navbar-toggler{
+            padding: 0;
+            width: 10%;
+            &:focus{
+                  outline: none;
+            }
+      }
+      .form-group{
+            input{
+                  border-radius: 4px;
+                  width: 504px ;
+                  height: 40px; 
+                  border: none;
+                  background: $grey url('../../../img/search.svg') no-repeat;
+                  background-size: 16px;
+                  background-position: 10px;
+                  padding-left: 2rem;
+                  &::placeholder{
+                        color: #8A94A6;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        width: 115.99px;
+                        text-align: left;
+                  }
+                  @include mobile{
+                        width: auto;
+                  }
+            }
+      }
+      
+      button{
+            border-radius: 4px;
+            width: 96px;
+            height: 40px;
+            border: 1px solid $green;
+      }
+}
